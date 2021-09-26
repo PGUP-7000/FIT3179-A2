@@ -23,7 +23,7 @@
         "size": {
           "field": "scan",
           "type": "quantitative",
-          "scale": {"domain": [1, 100]}
+          "scale": {"domain": [1, 20]}
         },
         "color": {
           "field": "bright_t31",
