@@ -4,10 +4,10 @@
         "url": "https://raw.githubusercontent.com/PGUP-7000/FIT3179-A2/main/fire_archive_M6_96619.csv"
     },
     "vconcat": [{
-            "width": "container",
+            "width": 500,
             "height": 400,
             "title": "Fires in Australia from Space(08/19 - 1/20)",
-            "projection": {"type": "equirectangular", "center": [133,-8], "scale": 600},
+            "projection": {"type": "equirectangular", "center": [110,-8], "scale": 600},
             "layer": [{
                 "data": {
             "url": "https://raw.githubusercontent.com/PGUP-7000/FIT3179-A2/main/output.json",
