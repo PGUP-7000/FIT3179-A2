@@ -1,0 +1,31 @@
+
+html {
+    background: #e6e9e9;
+}
+.pure-g > div {
+    box-sizing: border-box;
+    padding: 1em;
+}
+.l-box {
+    background-color: rgb(209, 209, 209);
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 200;
+    text-align: center;
+    color: rgb(145, 19, 25);
+}
+.heading-subtext{
+    text-align: center;
+}
+body {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 900px;
+}
