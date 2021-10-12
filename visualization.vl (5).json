@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/PGUP-7000/FIT3179-A2/main/fire_archive_M6_96619.csv"
+  },
+  "width": "container",
+  "height": 300,
+  "transform": [
+    {
+      "filter": {
+        "or": [
+          {"field": "admin1", "equal": "New South Wales"},
+          {"field": "admin1", "equal": "Northern Territory"},
+          {"field": "admin1", "equal": "Queensland"},
+          {"field": "admin1", "equal": "Western Australia"}
+        ]
+      }
+    }
+  ],
+  "layer": [
+    {
+      "encoding": {
+        "x": {"field": "acq_date", "type": "temporal"},
+        "y": {"aggregate": "count", "type": "quantitative"},
+        "color": {"field": "admin1", "type": "nominal"}
+      },
+      "layer": [
+        {"mark": "line"},
+        {
+          "params": [
+            {
+              "name": "label",
+              "select": {
+                "type": "point",
+                "encodings": ["x"],
+                "nearest": true,
+                "on": "mouseover"
+              }
+            }
+          ],
+          "mark": "point",
+          "encoding": {
+            "opacity": {
+              "condition": {"param": "label", "empty": false, "value": 1},
+              "value": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "transform": [{"filter": {"param": "label", "empty": false}}],
+      "layer": [
+        {
+          "mark": {"type": "rule", "color": "gray"},
+          "encoding": {
+            "x": {"type": "temporal", "field": "acq_date", "aggregate": "min"}
+          }
+        },
+        {
+          "encoding": {
+            "text": {"type": "quantitative", "aggregate": "count"},
+            "x": {"type": "temporal", "field": "acq_date"},
+            "y": {"type": "quantitative", "aggregate": "count"}
+          },
+          "layer": [
+            {
+              "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+              "encoding": {"color": {"type": "nominal", "field": "admin1"}}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "config": {}
+}
