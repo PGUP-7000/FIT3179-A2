@@ -29,3 +29,7 @@ body {
     margin: 0 auto;
     max-width: 900px;
 }
+form {
+    display: block;
+    margin-top: 0em;
+}
