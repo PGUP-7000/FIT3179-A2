@@ -5,7 +5,7 @@
     },
     "vconcat": [{
             "width": "container",
-            "height": 500,
+            "height": 400,
             "title": "Fires in Australia from Space(08/19 - 1/20)",
             "projection": {"type": "equirectangular", "center": [133,-8], "scale": 600},
             "layer": [{
