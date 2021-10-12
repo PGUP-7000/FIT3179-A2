@@ -1,0 +1,14 @@
+{
+  "data": {
+    "url": "https://raw.githubusercontent.com/PGUP-7000/FIT3179-A2/main/fire_archive_M6_96619.csv"
+  },
+  "mark": "bar",
+  "width": "container",
+  "height": 300,
+  "encoding": {
+    "y": {"field": "admin1"},
+    "x": {"aggregate": "count", "title": "population"},
+    "color": {"field": "admin1"}
+  },
+  "config": {}
+}
