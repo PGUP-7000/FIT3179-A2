@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/PGUP-7000/FIT3179-A2/main/fire_archive_M6_96619.csv"
+  },
+  "width": "container",
+  "height": 300,
+  "mark": "bar",
+  "params": [
+    {"name": "highlight", "select": {"type": "point", "on": "mouseover"}},
+    {"name": "no_highlight", "select": {"type": "point", "on": "mouseout"}},
+    {"name": "select", "select": "point"},
+    {"name": "highlight", "select": {"type": "point", "on": "mouseover"}},
+    {"name": "no_highlight", "select": {"type": "point", "on": "mouseout"}},
+    {"name": "select", "select": "point"}
+  ],
+  "encoding": {
+    "x": {
+      "timeUnit": "monthdate",
+      "field": "acq_date",
+      "title": "Month of the year"
+    },
+    "y": {"aggregate": "count", "type": "quantitative"},
+    "color": {"field": "admin1", "type": "nominal", "title": "State"},
+    "tooltip": [
+      {"field": "admin1", "title": "State"},
+      {"aggregate": "count", "title": "Frequency"}
+    ]
+  },
+  "config": {}
+}
