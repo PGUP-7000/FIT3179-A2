@@ -78,6 +78,7 @@
         demonstrated in small-scale experimental fires that the FRP of a fire is related to the rate at which fuel is
         being consumed. Fire Radiative Power is expressed in units of power, such as Watts (W).
       </p>
+      <div id="bubble_chart", class = "vis-container"></div>
   </div>
 </div>
 
@@ -101,6 +102,11 @@
 
   var spec4 = "Top_states.json";
   vegaEmbed('#line_chart', spec4).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  var spec5 = "Bubble_frp.json";
+  vegaEmbed('#bubble_chart', spec5).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
