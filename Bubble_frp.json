@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/PGUP-7000/FIT3179-A2/main/fire_archive_M6_96619.csv"
   },
-  "width": 600,
+  "width": "container",
   "height": 400,
   "mark": {
     "type": "circle",
@@ -23,7 +23,8 @@
       "type": "quantitative",
       "title": "FRP",
       "legend": {"clipHeight": 50},
-      "scale": {"rangeMax": 3000}
+      "scale": {"rangeMax": 3000},
+      "legend": null
     },
     "color": {"field": "admin1", "type": "nominal", "legend": null},
     "tooltip": [
