@@ -40,6 +40,7 @@
         "color": {
           "field": "bright_t31",
           "type": "quantitative",
+          "legend":null,
           "scale": {"scheme": "reds", "domain": [270, 330]}
         },
         "tooltip": [
