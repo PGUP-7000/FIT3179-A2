@@ -44,9 +44,8 @@
           "scale": {"scheme": "reds", "domain": [270, 330]}
         },
         "tooltip": [
-                            { "field": "acq_date", "type": "temporal"},
-                            { "field": "bright_t31", "type": "quantitative" },
-                            { "field": "scan", "type": "quantitative" }
+                            { "field": "acq_date", "type": "temporal","title":"Date"},
+                            { "field": "bright_t31", "type": "quantitative","title":"Brightness" }
                         ]
       }
     }
