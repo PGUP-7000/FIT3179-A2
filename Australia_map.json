@@ -34,7 +34,8 @@
         "size": {
           "field": "frp",
           "type": "quantitative",
-          "scale": {"domain": [1, 8000]}
+          "scale": {"domain": [1, 8000]},
+          "legend":null
         },
         "color": {
           "field": "bright_t31",
@@ -53,26 +54,24 @@
         {
             "width": "container",
             "height": 60,
-            "mark": "line",
+            "mark": "bar",
             "title": "Use this line chart to filter out the data based on time",
             "params": [{
                 "name": "time_brush",
                 "select": { "type": "interval", "encodings": ["x"] }
             }],
             "encoding": {
-                "x": {
-                    "field": "acq_date",
-                    "timeUnit": "dayofyear",
-                    "axis": { "tickCount": 10,"title": "Time", "format": "%d/%m", "grid": false }
-                },
-                "y": {
-                    "aggregate": "count",
-                    "axis": { "tickCount": 3, "grid": true },
-                    "title": "Count"
-                },
-                "color": {
-      "value": "red"
-    }
+    "x": {
+      "timeUnit": "monthdate",
+      "field": "acq_date",
+      "title": "Month of the year"
+    },
+    "y": {"aggregate": "count", "type": "quantitative"},
+    "color": {"field": "admin1", "type": "nominal", "title": "State","legend" : null},
+    "tooltip": [
+      {"field": "admin1", "title": "State"},
+      {"aggregate": "count", "title": "Frequency"}
+    ]
             }
         } 
     ],
