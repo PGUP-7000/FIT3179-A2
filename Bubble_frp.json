@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/PGUP-7000/FIT3179-A2/main/fire_archive_M6_96619.csv"
   },
-  "title":"FRP of each fire in each state(Aug 2019 - Sep 2019)",
+  "title":{"text": "FRP of each fire in each state(Aug 2019 - Sep 2019).","subtitle":"The size of each bubble denotes how fierce the fire was, and the rings in each bubble denote how many different fires took place that day."},
   "width": "container",
   "height": 400,
   "params": [
@@ -47,7 +47,7 @@
           },
       "legend": null
     },
-    "color":  {"field":"admin1", "type": "nominal","scale":{"domain": [
+    "color":  {"field":"admin1", "type": "nominal","legend":null,"scale":{"domain": [
               "Australian Capital Territory",
               "New South Wales",
               "Northern Territory",
@@ -66,8 +66,6 @@
               "#a87c9f",
               "#f1a2a9"
             ]}},
-    
-    
     "tooltip": [
       {"field": "admin1", "title": "State"},
       {"field": "frp", "title": "FRP"}
