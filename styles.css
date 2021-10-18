@@ -15,10 +15,12 @@ h1{
     font-weight: 200;
     text-align: center;
     color: rgb(145, 19, 25);
+    font-family: 'Bebas Neue', cursive;
 }
 
 h2{
     color: rgb(202, 71, 31); 
+    font-family: 'Titillium Web', sans-serif;
 }
 .heading-subtext{
     text-align: center;
@@ -32,7 +34,13 @@ body {
     line-height: 1.5;
     margin: 0 auto;
     max-width: 900px;
+    
 }
+
+p{
+    font-family: 'Montserrat', sans-serif ;
+}
+
 .vis-container {
     width: 100%;
     align-items: center;
