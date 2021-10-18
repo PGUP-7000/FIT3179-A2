@@ -8,7 +8,7 @@
   "encoding": {
     "y": {"field": "admin1", "title": "States"},
     "x": {"aggregate": "count", "title": "Fires"},
-    "color": {"field": "admin1"},
+    "color": {"field": "admin1","legend":null},
     "tooltip": {"aggregate": "count", "title": "Number of Fires"}
   },
   "config": {}
