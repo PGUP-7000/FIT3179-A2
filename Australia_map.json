@@ -61,6 +61,7 @@
       "title": "Month of the year"
     },
     "y": {"aggregate": "count", "type": "quantitative"},
+    "title": "Number of Fires",
     "color": {"field": "admin1", "type": "nominal", "title": "State","legend" : null},
     "tooltip": [
       {"field": "admin1", "title": "State"},
