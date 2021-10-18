@@ -48,7 +48,7 @@
         {
             "width": "container",
             "height": 60,
-            "mark": "line",
+            "mark": "bar",
             "title": "Use this line chart to filter out the data based on time",
             "params": [{
                 "name": "time_brush",
