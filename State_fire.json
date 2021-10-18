@@ -6,8 +6,8 @@
   "width": "container",
   "height": 300,
   "encoding": {
-    "y": {"field": "admin1"},
-    "x": {"aggregate": "count", "title": "population"},
+    "y": {"field": "admin1", "title": "States"},
+    "x": {"aggregate": "count", "title": "Fires"},
     "color": {"field": "admin1"}
   },
   "config": {}
